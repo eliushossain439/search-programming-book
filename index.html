@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-6</title>
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<!-- custom css -->
+<style>
+    #loading {
+        display: none;
+    }
+
+    #erorr {
+        display: none;
+    }
+</style>
+
+<body>
+
+    <!-- secrch input -->
+    <section class="w-50 mx-auto mt-5">
+        <!-- head line -->
+        <h2 class="mb-3">programming books search..</h2>
+        <div class=" input-group mb-3">
+            <input id="searchText" type="text" class="form-control" placeholder="search-book">
+            <button class="btn btn-secondary" onclick="searchBook()">search</button>
+        </div>
+        <!-- error massage -->
+        <p class="text-danger" id="erorr">!somthing is wrong</p>
+        <!-- loading spinners -->
+        <button class="btn" type="button" id="loading">
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Loading...
+        </button>
+    </section>
+
+    <!-- books details -->
+    <section class="w-50 mx-auto mt-5">
+        <div class="row g-4" id="bookDetails">
+
+        </div>
+    </section>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
